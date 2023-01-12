@@ -94,7 +94,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
 }
 
@@ -109,6 +109,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-decoration: none;
 }
 
 .card.magic-navs{
@@ -120,7 +121,9 @@ body {
     max-height: 700px;
     border-radius: 15px;
     filter: saturate(0) blur(1px);
-    border: 5px solid transparent;
+    border: 3px  solid transparent;
+    border-top: 0;
+
     transition: 0.5s all;
     z-index: 2;
 
@@ -128,9 +131,11 @@ body {
 
 .project-img:hover{
     filter: saturate(1) blur(0px);
-    border: 5px solid var(--light);
+    border: 3px solid var(--light);
+    border-top: 0;
     cursor: pointer;
     transition: 0.5s all;
+    box-shadow: 0 5px 10px #fff
 }
 
 .project-description{
@@ -141,4 +146,5 @@ body {
 
 .project-header{
     font-size: 2em;
+    padding: 15px;
 }
