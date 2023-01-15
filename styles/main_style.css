@@ -119,6 +119,7 @@ body {
 
 .project-img{
     max-height: 700px;
+    max-width: 500px;
     border-radius: 15px;
     filter: saturate(0) blur(1px);
     border: 3px  solid transparent;
