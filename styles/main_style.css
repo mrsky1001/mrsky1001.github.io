@@ -65,9 +65,10 @@ body {
 #start-header  {
     position: relative;
     color: #fff;
-    font-size: 8em;
+    font-size: 10em;
     margin-bottom: 220px;
     z-index: 1;
+    padding: 20px;
 }
 
 #road  {
@@ -85,7 +86,7 @@ body {
 #projects-header  {
     position: relative;
     color: #fff;
-    font-size: 5em;
+    font-size: 3em;
     margin-bottom: 220px;
     z-index: 1;
 }
@@ -99,7 +100,7 @@ body {
 }
 
 .column{
-    max-width: 500px;
+    max-width: 50vw;
     padding: 25px 100px;
 }
 
@@ -119,7 +120,7 @@ body {
 
 .project-img{
     max-height: 700px;
-    max-width: 500px;
+    max-width: 700px;
     border-radius: 15px;
     filter: saturate(0) blur(1px);
     border: 3px  solid transparent;
@@ -136,7 +137,7 @@ body {
     border-top: 0;
     cursor: pointer;
     transition: 0.5s all;
-    box-shadow: 0 5px 10px #fff
+    box-shadow: 0 3px 10px #fff
 }
 
 .project-description{
@@ -148,6 +149,34 @@ body {
 .project-header{
     font-size: 2em;
     padding: 15px;
+}
+
+@media (max-width:800px) {
+    #start-header{
+        font-size: 3em;
+    }
+
+    #projects-header  {
+        font-size: 2em;
+    }
+
+    .project-header{
+        font-size: 1em;
+    }
+
+    .project-img, .column {
+        max-width: 80vw;
+    }
+
+    a{
+        min-height: 10vh;
+
+    }
+
+    .row{
+        padding: 0;
+    }
+
 }
 
 /* snow SCSS*/
