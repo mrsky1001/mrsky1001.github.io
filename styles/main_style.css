@@ -153,7 +153,7 @@ body {
 
 @media (max-width:800px) {
     #start-header{
-        font-size: 3em;
+        font-size: 2.6em;
     }
 
     #projects-header  {
@@ -165,9 +165,13 @@ body {
     }
 
     .project-img, .column {
-        max-width: 80vw;
+        max-width: 70vw;
     }
 
+    .column{
+        padding: 0;
+    }
+    
     a{
         min-height: 10vh;
 
